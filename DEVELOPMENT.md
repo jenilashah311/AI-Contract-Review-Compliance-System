@@ -1,6 +1,6 @@
 # Development Guide
 
-## 🔧 Adding New Features
+## Adding New Features
 
 ### Adding a New Standard Clause Category
 
@@ -73,7 +73,7 @@ def calculate_risk_score(total: int, missing: int, review: int) -> float:
     return normalize_score(raw_score, total)
 ```
 
-## 🧪 Testing Strategy
+## Testing Strategy
 
 ### Unit Tests
 
@@ -118,7 +118,7 @@ pytest tests/ --cov=app --cov-report=html
 pytest tests/ -x
 ```
 
-## 📊 Monitoring & Debugging
+## Monitoring & Debugging
 
 ### View Logs
 
@@ -179,7 +179,7 @@ curl -X POST http://localhost:8000/clauses/ \
 curl http://localhost:8000/clauses/
 ```
 
-## 🔄 Database Migrations
+## Database Migrations
 
 ### Create New Migration
 
@@ -225,7 +225,7 @@ alembic current
 alembic history
 ```
 
-## 🎨 Frontend Development
+## Frontend Development
 
 ### Adding a New Page
 
@@ -294,7 +294,7 @@ import styles from './page.module.css';
 </div>
 ```
 
-## 🐛 Common Issues & Solutions
+## Common Issues & Solutions
 
 ### Issue: "Connection refused" to PostgreSQL
 
@@ -354,7 +354,7 @@ python -c "import app.models"
 pytest tests/ -v -s
 ```
 
-## 📦 Building for Production
+## Building for Production
 
 ### Backend
 
@@ -396,7 +396,7 @@ services:
     restart: always
 ```
 
-## 🔒 Security Considerations
+## Security Considerations
 
 1. **Environment Variables**: Never commit `.env` files
 2. **File Upload**: Validate file types and sizes (already implemented)
@@ -404,7 +404,7 @@ services:
 4. **API**: Add rate limiting for production
 5. **CORS**: Restrict origins in production
 
-## 📈 Performance Optimization
+## Performance Optimization
 
 ### Backend
 
@@ -435,7 +435,7 @@ const [page, setPage] = useState(1);
 const documents = await getDocuments({ skip: (page-1)*20, limit: 20 });
 ```
 
-## 🚀 Deployment Checklist
+## Deployment Checklist
 
 - [ ] Update environment variables
 - [ ] Run database migrations
@@ -449,7 +449,7 @@ const documents = await getDocuments({ skip: (page-1)*20, limit: 20 });
 - [ ] Test end-to-end functionality
 - [ ] Document deployment process
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [Next.js Documentation](https://nextjs.org/docs)

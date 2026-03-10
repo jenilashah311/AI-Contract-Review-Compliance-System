@@ -1,74 +1,74 @@
 # Contract Compliance Checker - Version 1.0.0
 
-## 📦 Release Information
+## Release Information
 
 **Release Date**: March 9, 2026  
 **Version**: 1.0.0  
 **Status**: Production Ready
 
-## ✨ Features Implemented
+## Features Implemented
 
 ### Core Functionality
-- ✅ PDF contract upload and processing
-- ✅ Automatic text extraction from PDF files
-- ✅ Intelligent clause identification and chunking
-- ✅ Semantic similarity matching using embeddings
-- ✅ Compliance gap analysis
-- ✅ Risk score calculation (0-100 scale)
-- ✅ Standard clause library management
+-  PDF contract upload and processing
+-  Automatic text extraction from PDF files
+-  Intelligent clause identification and chunking
+-  Semantic similarity matching using embeddings
+-  Compliance gap analysis
+-  Risk score calculation (0-100 scale)
+-  Standard clause library management
 
 ### Backend (FastAPI)
-- ✅ RESTful API with OpenAPI documentation
-- ✅ PostgreSQL database with pgvector extension
-- ✅ SQLAlchemy ORM with Alembic migrations
-- ✅ Sentence-transformers embeddings (all-MiniLM-L6-v2)
-- ✅ PyMuPDF for PDF text extraction
-- ✅ Rule-based clause parsing
-- ✅ Cosine similarity computation
-- ✅ Conflict detection heuristics
-- ✅ Weighted risk scoring algorithm
-- ✅ CORS support for cross-origin requests
+-  RESTful API with OpenAPI documentation
+-  PostgreSQL database with pgvector extension
+-  SQLAlchemy ORM with Alembic migrations
+-  Sentence-transformers embeddings (all-MiniLM-L6-v2)
+-  PyMuPDF for PDF text extraction
+-  Rule-based clause parsing
+-  Cosine similarity computation
+-  Conflict detection heuristics
+-  Weighted risk scoring algorithm
+-  CORS support for cross-origin requests
 
 ### Frontend (Next.js)
-- ✅ Modern, responsive UI with TypeScript
-- ✅ Document upload interface
-- ✅ Document list with risk indicators
-- ✅ Detailed analysis view with side-by-side comparison
-- ✅ Standard clause management interface
-- ✅ Real-time status updates
-- ✅ Filter and sort functionality
-- ✅ Category-based organization
+-  Modern, responsive UI with TypeScript
+-  Document upload interface
+-  Document list with risk indicators
+-  Detailed analysis view with side-by-side comparison
+-  Standard clause management interface
+-  Real-time status updates
+-  Filter and sort functionality
+-  Category-based organization
 
 ### Database Schema
-- ✅ Documents table (contract metadata)
-- ✅ Standard clauses table (clause library with embeddings)
-- ✅ Extracted clauses table (parsed contract clauses)
-- ✅ Clause analyses table (comparison results)
-- ✅ Vector similarity search with pgvector
+-  Documents table (contract metadata)
+-  Standard clauses table (clause library with embeddings)
+-  Extracted clauses table (parsed contract clauses)
+-  Clause analyses table (comparison results)
+-  Vector similarity search with pgvector
 
 ### Testing
-- ✅ Unit tests for PDF processing
-- ✅ Unit tests for embeddings and similarity
-- ✅ Unit tests for risk scoring
-- ✅ Integration tests for API endpoints
-- ✅ Test fixtures and mocks
+-  Unit tests for PDF processing
+-  Unit tests for embeddings and similarity
+-  Unit tests for risk scoring
+-  Integration tests for API endpoints
+-  Test fixtures and mocks
 
 ### DevOps
-- ✅ Docker support for all services
-- ✅ Docker Compose orchestration
-- ✅ Makefile for common tasks
-- ✅ Database migrations with Alembic
-- ✅ Automated seeding with 20 sample clauses
+-  Docker support for all services
+-  Docker Compose orchestration
+-  Makefile for common tasks
+-  Database migrations with Alembic
+-  Automated seeding with 20 sample clauses
 
 ### Documentation
-- ✅ Comprehensive README
-- ✅ Quick start guide
-- ✅ Project structure documentation
-- ✅ Development guide
-- ✅ API documentation (Swagger/ReDoc)
-- ✅ Environment configuration templates
+-  Comprehensive README
+-  Quick start guide
+-  Project structure documentation
+-  Development guide
+-  API documentation (Swagger/ReDoc)
+-  Environment configuration templates
 
-## 📊 Statistics
+## Statistics
 
 - **Total Files**: 45+
 - **Backend Python Code**: ~2000 lines
@@ -78,7 +78,7 @@
 - **Supported Formats**: PDF
 - **Embedding Dimensions**: 384 (all-MiniLM-L6-v2)
 
-## 🎯 Capabilities
+## Capabilities
 
 ### Supported Contract Analysis
 - Confidentiality clauses
@@ -103,7 +103,7 @@
   - Category-based grouping
   - Match confidence levels
 
-## 🔧 Technical Specifications
+## Technical Specifications
 
 ### Backend Requirements
 - Python 3.11+
@@ -124,7 +124,7 @@
 - **Storage**: 500MB for application + space for PDFs
 - **Network**: Internet connection for initial model download (~80MB)
 
-## 🚀 Deployment Options
+## Deployment Options
 
 1. **Docker Compose** (Recommended)
    - One command deployment
@@ -141,7 +141,7 @@
    - Scalable architecture
    - Storage abstraction ready
 
-## 🔮 Roadmap for Future Versions
+## Roadmap for Future Versions
 
 ### Version 1.1.0 (Planned)
 - [ ] OpenAI embeddings integration
@@ -164,15 +164,15 @@
 - [ ] Collaborative review features
 - [ ] Mobile application
 
-## 🐛 Known Issues
+## Known Issues
 
 None reported in v1.0.0.
 
-## 📝 Migration Notes
+## Migration Notes
 
 This is the initial release. No migration required.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 Built with:
 - FastAPI by Sebastián Ramírez
@@ -181,7 +181,7 @@ Built with:
 - sentence-transformers by UKPLab
 - PyMuPDF by Artifex Software
 
-## 📄 License
+## License
 
 This project is provided as-is for educational and commercial use.
 

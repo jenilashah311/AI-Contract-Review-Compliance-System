@@ -2,7 +2,7 @@
 
 An end-to-end web application for analyzing contract compliance against a standard clause library using AI-powered text analysis and vector embeddings.
 
-## 🎯 Features
+## Features
 
 - **PDF Contract Upload**: Upload contract PDFs for automated analysis
 - **Intelligent Clause Extraction**: Automatic clause identification using rule-based parsing
@@ -12,7 +12,7 @@ An end-to-end web application for analyzing contract compliance against a standa
 - **Interactive Dashboard**: Modern UI for viewing analysis results with side-by-side comparisons
 - **Standard Clause Management**: CRUD interface for managing your clause library
 
-## 🏗️ Architecture
+## Architecture
 
 ### Backend
 - **Framework**: FastAPI (Python)
@@ -29,25 +29,25 @@ An end-to-end web application for analyzing contract compliance against a standa
 ### Key Components
 
 ```
-├── backend/
-│   ├── app/
-│   │   ├── main.py              # FastAPI application
-│   │   ├── models.py            # Database models
-│   │   ├── schemas.py           # Pydantic schemas
-│   │   ├── routers/             # API endpoints
-│   │   ├── services/            # Business logic
-│   │   └── utils/               # PDF processing & embeddings
-│   ├── alembic/                 # Database migrations
-│   ├── tests/                   # Unit & integration tests
-│   └── seed_data.py             # Sample clause seeder
-├── frontend/
-│   └── src/
-│       ├── app/                 # Next.js pages
-│       └── lib/                 # API client
-└── docker-compose.yml           # Container orchestration
+ backend/
+    app/
+       main.py              # FastAPI application
+       models.py            # Database models
+       schemas.py           # Pydantic schemas
+       routers/             # API endpoints
+       services/            # Business logic
+       utils/               # PDF processing & embeddings
+    alembic/                 # Database migrations
+    tests/                   # Unit & integration tests
+    seed_data.py             # Sample clause seeder
+ frontend/
+    src/
+        app/                 # Next.js pages
+        lib/                 # API client
+ docker-compose.yml           # Container orchestration
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -133,7 +133,7 @@ npm run dev
 
 Frontend will run at http://localhost:3000
 
-## 📖 Usage
+## Usage
 
 ### 1. Upload a Contract
 
@@ -158,7 +158,7 @@ The document detail page shows:
 3. Add new standard clauses with category, title, and text
 4. Delete outdated clauses
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all backend tests
@@ -179,7 +179,7 @@ Test coverage includes:
 - Conflict detection
 - API endpoints
 
-## 🔧 Configuration
+## Configuration
 
 ### Backend Environment Variables
 
@@ -198,7 +198,7 @@ CONFLICT_WEIGHT=5
 NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
 
-## 📊 Database Schema
+## Database Schema
 
 ### Tables
 
@@ -211,7 +211,7 @@ NEXT_PUBLIC_API_URL=http://localhost:8000
 
 Uses pgvector extension with 384-dimensional embeddings from all-MiniLM-L6-v2 model.
 
-## 🎨 API Documentation
+## API Documentation
 
 Interactive API documentation available at:
 - Swagger UI: http://localhost:8000/docs
@@ -232,7 +232,7 @@ PUT    /clauses/{id}              Update clause
 DELETE /clauses/{id}              Delete clause
 ```
 
-## 🔄 How It Works
+## How It Works
 
 ### Analysis Pipeline
 
@@ -260,7 +260,7 @@ Simple heuristic checks for negation keywords:
 - "not", "no", "never", "except", "without", "prohibited"
 - Flags potential conflicts when one clause has negation and the other doesn't
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] OpenAI API integration for embeddings (already abstracted)
 - [ ] S3 storage for PDFs (abstracted storage layer)
@@ -273,7 +273,7 @@ Simple heuristic checks for negation keywords:
 - [ ] User authentication and multi-tenancy
 - [ ] Webhook notifications
 
-## 🛠️ Development Commands
+## Development Commands
 
 ```bash
 # Using Makefile
@@ -293,7 +293,7 @@ cd backend && pytest tests/ -v
 cd backend && alembic upgrade head
 ```
 
-## 📝 Seeded Standard Clauses
+## Seeded Standard Clauses
 
 The application comes with 20 sample standard clauses across 8 categories:
 
@@ -307,7 +307,7 @@ The application comes with 20 sample standard clauses across 8 categories:
 - **General Provisions** (3 clauses)
 - **Dispute Resolution** (2 clauses)
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -315,11 +315,11 @@ The application comes with 20 sample standard clauses across 8 categories:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is provided as-is for educational and commercial use.
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Database Connection Issues
 
@@ -341,10 +341,10 @@ psql contract_compliance -c "SELECT * FROM pg_extension WHERE extname = 'vector'
 
 First run downloads the sentence-transformers model (~80MB). Ensure internet connection.
 
-## 📧 Support
+## Support
 
 For issues or questions, please open a GitHub issue.
 
 ---
 
-**Built with ❤️ using FastAPI, Next.js, and PostgreSQL**
+**Built using FastAPI, Next.js, and PostgreSQL**
