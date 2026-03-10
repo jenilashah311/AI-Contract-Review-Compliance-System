@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg: #f3f7fb;
+  --surface: #ffffff;
+  --surface-soft: #f4f9ff;
+  --surface-glass: rgba(255, 255, 255, 0.86);
+  --text: #0f172a;
+  --muted: #4b5563;
+  --primary: #0ea5a4;
+  --primary-dark: #0b7f7d;
+  --secondary: #7c3aed;
+  --ring: rgba(14, 165, 164, 0.26);
+  --border: #d7e6ea;
+
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  --hero-gradient: linear-gradient(125deg, #0f766e 0%, #0ea5a4 45%, #7c3aed 100%);
+  --primary-gradient: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  --card-gradient: linear-gradient(180deg, #ffffff, #f4fbff);
+
+  --shadow-sm: 0 8px 20px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 14px 30px rgba(15, 23, 42, 0.1);
+  --shadow-lg: 0 16px 35px rgba(15, 23, 42, 0.16);
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: var(--text);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(14, 165, 164, 0.1), transparent 35%),
+    radial-gradient(circle at 80% 10%, rgba(124, 58, 237, 0.1), transparent 35%),
+    var(--bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 1px;
+}
